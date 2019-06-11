@@ -1,11 +1,11 @@
 """
-Unitary tests for mymodule.py.
+Unitary tests for exporters/prometheus_metrics.py.
 
-:author: xarbulu
+:author: abelarbi
 :organization: SUSE Linux GmbH
-:contact: xarbulu@suse.de
+:contact: abelarbi@suse.de
 
-:since: 2018-11-13
+:since: 2019-06-11
 """
 
 # pylint:disable=C0103,C0111,W0212,W0611
