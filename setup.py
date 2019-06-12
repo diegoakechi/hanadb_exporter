@@ -16,7 +16,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-import myproject
+import hanadb_exporter
 
 def read(fname):
     """
@@ -26,9 +26,9 @@ def read(fname):
 
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-VERSION = myproject.__version__
-NAME = "myproject"
-DESCRIPTION = "Project template"
+VERSION = hanadb_exporter.__version__
+NAME = "hanadb_exporter"
+DESCRIPTION = "Prometheus exporter for HANA database"
 
 AUTHOR = "xarbulu"
 AUTHOR_EMAIL = "xarbulu@suse.de"
