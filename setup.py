@@ -44,14 +44,14 @@ CLASSIFIERS = [
     "Natural Language :: English",
     "Operating System :: Unix",
     "Operating System :: Microsoft :: Windows",
-    "Programming Language :: Python :: 2.7",
-    "Programming Language :: Python :: 2 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3 :: Only",
 ]
 
 SCRIPTS = []
 
-DEPENDENCIES = read('requirements.txt').split()
-
+DEPENDENCIES = "prometheus-client>=0.6.0"
+DEPENDENCY_LINKS = ["git+https://github.com/SUSE/shaptools.git#egg=shaptools"]
 PACKAGE_DATA = {}
 DATA_FILES = []
 
@@ -71,6 +71,7 @@ SETUP_PARAMS = dict(
     data_files=DATA_FILES,
     install_requires=DEPENDENCIES,
     classifiers=CLASSIFIERS,
+    dependency_links=DEPENDENCY_LINKS,
 )
 
 def main():
